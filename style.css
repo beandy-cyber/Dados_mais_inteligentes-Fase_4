@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    color: #202020;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+table {
+    width: 1000px;
+    box-shadow: 0.5px 5px 15px 1px #2c2c2c46;
+    margin: 40px auto;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+caption {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    color: #061539;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+thead {
+    border: 1px solid #141b29;
+    background-color: #141b29;
+}
+
+th,
+td {
+    border: solid 1px rgba(179, 179, 179, 0.754);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+tbody tr {
+    border-bottom: 2px solid rgba(163, 163, 163, 0.904);
+}
+
+tfoot {
+    background-color: rgba(54, 53, 53, 0.582);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+
+tbody tr:hover {
+    background-color: #eee;
+    color: #336699;
+    cursor: pointer;
+}
