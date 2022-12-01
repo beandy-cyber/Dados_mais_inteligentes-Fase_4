@@ -1,99 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projeto Traveller - Dados mais inteligentes!</title>
-	<link rel="stylesheet" href="style.css"> </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
 
+</head>
 <body>
-	<div class="infos">
-		<table>
-			<caption>Informações</caption>
-			<thead>
-				<tr>
-					<th>Nome Cidades </th>
-					<th>Roteiro A</th>
-					<th>Roteiro B</th>
-					<th>Roteiro C</th>
-					<th>Locais Citados</th>
-					<th>Pontos Turísticos </th>
-				</tr>
-			</thead>
-			<tfoot> </tfoot>
-			<tbody>
-				<tr class="SP">
-					<td id="sp"></td>
-					<td id="roteiro_SP"></td>
-					<td id="roteiroB_SP"></td>
-					<td id="roteiroC_SP"></td>
-					<td id="locais_SP"></td>
-					<td id="Pontos_SP"></td>
-				</tr>
-				<tr class="lasVegas">
-					<td id="lv"></td>
-					<td id="roteiroA_LV"></td>
-					<td id="roteiroB_LV"></td>
-					<td id="roteiroC_LV"></td>
-					<td id="locais_Lv"></td>
-					<td id="Pontos_Lv"></td>
-				</tr>
-				<tr class="MC">
-					<td id="mc"></td>
-					<td id="roteiroA_MC"></td>
-					<td id="roteiroB_MC"></td>
-					<td id="roteiroC_MC"></td>
-					<td id="locais_Mc"></td>
-					<td id="Pontos_Mc"></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<script>
-	var sp = document.querySelector("#sp");
-	sp.innerHTML = "São Paulo"
-	var Moscou = document.querySelector("#mc");
-	Moscou.innerHTML = "Moscou"
-	var LasVegas = document.querySelector("#lv");
-	LasVegas.innerHTML = "Las Vegas"
-	var roteiroA_SP = document.querySelector("#roteiro_SP");
-	roteiroA_SP.innerHTML = " Região: Avenida Paulista <br>MASP<br> Parque Trianon<br> Rua Augusta"
-	var roteiroB_SP = document.querySelector("#roteiroB_SP");
-	roteiroB_SP.innerHTML = " Região: Centro <br> Catedral da Sé Pátio do Colégio<br> Rua Augusta"
-	var roteiroC_SP = document.querySelector("#roteiroC_SP");
-	roteiroC_SP.innerHTML = " Região: Vila Madalena <br>Beco do Batman; Feirinha da Benedito Calixto; Livraria da Vila"
-		//  - -- ---------------------- LAS VEGAS -------------------------//
-	var roteiroA_LV = document.querySelector("#roteiroA_LV");
-	roteiroA_LV.innerHTML = "Região: Las Vegas <br >Boulevard SouthFonte do Bellagio <br> Principais Cassinos <br> Madame Tussauds"
-	var roteiroB_LV = document.querySelector("#roteiroB_LV");
-	roteiroB_LV.innerHTML = "Região: Downtown <br >Fremont; Las Vegas Art Museum <br>  Museu nacional do Crime Organizado"
-	var roteiroC_LV = document.querySelector("#roteiroC_LV");
-	roteiroC_LV.innerHTML = "Região: Las Vegas Boulevard North <br> Outlet Premium North<br> Stratosphere<br> Apple Fashion Show"
-		// xxx -------------------------- MOSCOU ---------------- XX 
-	var roteiroA_MC = document.querySelector("#roteiroA_MC");
-	roteiroA_MC.innerHTML = " Região: Praça Vermelha <br> Museu Histórico do Estado <br> Catedral de São Basílico <br> Mausoléu de Lênin"
-	var roteiroB_MC = document.querySelector("#roteiroB_MC");
-	roteiroB_MC.innerHTML = "  Região: Centro <br> Teatro Bolshoi <br> Monumento a Karl Marx <br> Rio Moscou"
-	var roteiroC_MC = document.querySelector("#roteiroC_MC");
-	roteiroC_MC.innerHTML = " Região: Obras pela cidade <br> Metrô de Moscou<br> As Sete Irmãs<br> Moscow Leningradsky Railway Station"
-		//    xxxxxxxxxxxxxxxx - locais - pontos de  SP xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	var Pontos_SP = document.querySelector("#Pontos_SP");
-	Pontos_SP.innerHTML = " Beco do Batman <br> Catedral da Sé Pátio do Colégio<br>MASP"
-	var locais_SP = document.querySelector("#locais_SP");
-	locais_SP.innerHTML = " Vila Madalena <br> Centro <br>Avenida Paulista"
-		//    xxxxxxxxxxxxxxxx - locais - pontos de  las vegas  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	var Pontos_Lv = document.querySelector("#Pontos_Lv");
-	Pontos_Lv.innerHTML = " Madame Tussauds <br> Museu nacional do Crime Organizado <br>Apple Fashion Show"
-	var locais_Lv = document.querySelector("#locais_Lv");
-	locais_Lv.innerHTML = " Las Vegas Boulevard north<br> Downtown <br> Las Vegas Boulevard South"
-		//    xxxxxxxxxxxxxxxx - locais - pontos de  las vegas  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	var Pontos_Mc = document.querySelector("#Pontos_Mc");
-	Pontos_Mc.innerHTML = " Catedral de São Basílico <br>Teatro Bolshoi<br>Metrô de Moscou"
-	var locais_Mc = document.querySelector("#locais_Mc");
-	locais_Mc.innerHTML = " Praça Vermelha<br> Centro <br> Obras pela cidade"
-	</script>
-</body>
+   
+    <div class="infos">
+        <table>
+            <caption>INFORMAÇÕES</caption>
+            <thead>
+    <tr>
+    <th >Nome Cidades  </th>
+    <th>Roteiro A</th>
+    <th>Roteiro B</th>
+    <th>Roteiro C</th>
+    <th>Qtd Locais Citados</th>
+    <th>Pontos Turísticos </th>
+    </tr></thead><tfoot>
+    
+ 
+    </tfoot>
+    <tbody>
+    <tr class="SP">
+        <td id="sp"></td>
+        <td id="roteiro_SP"></td>
+        <td id= "roteiroB_SP"></td>
+        <td id= "roteiroC_SP"></td>
+        <td id= "locais_SP"></td>
+        <td id= "Pontos_SP"></td>
 
+
+
+   
+       
+    </tr>
+    <tr class="lasVegas">
+        <td id="lv"></td>
+        <td id="roteiroA_LV"></td>
+        <td id="roteiroB_LV"></td>
+        <td id="roteiroC_LV"></td>
+        <td id="locais_Lv"></td>
+        <td id="Pontos_Lv"></td>
+       
+    </tr>
+    <tr class="MC">
+        <td id="mc"></td>
+        <td id="roteiroA_MC"></td>
+        <td id="roteiroB_MC"></td>
+        <td id="roteiroC_MC"></td>
+        <td id="locais_Mc"></td>
+        <td id="Pontos_Mc"></td>
+       
+    </tr>
+  
+    </tbody>
+    
+    </table>
+    </div>
+<script>
+    
+
+    
+var sp= document.querySelector("#sp");
+sp.innerHTML = "São Paulo"
+
+var Moscou = document.querySelector("#mc");
+Moscou.innerHTML = "Moscou"
+
+var LasVegas= document.querySelector("#lv");
+LasVegas.innerHTML = "Las Vegas"
+
+
+var roteiroA_SP = document.querySelector("#roteiro_SP");
+roteiroA_SP.innerHTML = " Região: Avenida Paulista <br>MASP<br> Parque Trianon<br> Rua Augusta"
+
+var roteiroB_SP = document.querySelector("#roteiroB_SP");
+
+
+
+roteiroB_SP.innerHTML = " Região: Centro <br> Catedral da Sé Pátio do Colégio<br> Rua Augusta"
+
+var roteiroC_SP = document.querySelector("#roteiroC_SP");
+roteiroC_SP.innerHTML = " Região: Vila Madalena <br>Beco do Batman; Feirinha da Benedito Calixto; Livraria da Vila"
+
+
+
+
+//  - -- ---------------------- LAS VEGAS -------------------------//
+var roteiroA_LV = document.querySelector("#roteiroA_LV");
+roteiroA_LV.innerHTML = "Região: Las Vegas <br >Boulevard SouthFonte do Bellagio <br> Principais Cassinos <br> Madame Tussauds"
+var roteiroB_LV = document.querySelector("#roteiroB_LV");
+
+roteiroB_LV.innerHTML = "Região: Downtown <br >Fremont; Las Vegas Art Museum <br>  Museu nacional do Crime Organizado"
+var roteiroC_LV = document.querySelector("#roteiroC_LV");
+
+roteiroC_LV.innerHTML = "Região: Las Vegas Boulevard North <br> Outlet Premium North<br> Stratosphere<br> Apple Fashion Show"
+
+
+// xxx -------------------------- MOSCOU ---------------- XX 
+
+var roteiroA_MC = document.querySelector("#roteiroA_MC");
+roteiroA_MC.innerHTML = " Região: Praça Vermelha <br> Museu Histórico do Estado <br> Catedral de São Basílico <br> Mausoléu de Lênin"
+
+var roteiroB_MC = document.querySelector("#roteiroB_MC");
+roteiroB_MC.innerHTML = "  Região: Centro <br> Teatro Bolshoi <br> Monumento a Karl Marx <br> Rio Moscou"
+
+var roteiroC_MC = document.querySelector("#roteiroC_MC");
+roteiroC_MC.innerHTML = " Região: Obras pela cidade <br> Metrô de Moscou<br> As Sete Irmãs<br> Moscow Leningradsky Railway Station"
+//    xxxxxxxxxxxxxxxx - locais - pontos de  SP xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+var Pontos_SP= document.querySelector("#Pontos_SP");
+Pontos_SP.innerHTML = " Beco do Batman <br> Catedral da Sé Pátio do Colégio<br>MASP"
+
+var locais_SP= document.querySelector("#locais_SP");
+locais_SP.innerHTML = "3"
+//    xxxxxxxxxxxxxxxx - locais - pontos de  las vegas  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+var Pontos_Lv= document.querySelector("#Pontos_Lv");
+Pontos_Lv.innerHTML = " Madame Tussauds <br> Museu nacional do Crime Organizado <br>Apple Fashion Show"
+
+var locais_Lv= document.querySelector("#locais_Lv");
+locais_Lv.innerHTML = "3"
+//    xxxxxxxxxxxxxxxx - locais - pontos de  las vegas  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+var Pontos_Mc= document.querySelector("#Pontos_Mc");
+Pontos_Mc.innerHTML = " Catedral de São Basílico <br>Teatro Bolshoi<br>Metrô de Moscou"
+
+var locais_Mc= document.querySelector("#locais_Mc");
+locais_Mc.innerHTML = "3"
+
+</script>
+</body>
 </html>
